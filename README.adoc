@@ -1,0 +1,18 @@
+## Spring Boot 1.5
+
+```
+    "spring.redis.password": "******"
+    "sun.java.command": "target/demo-1.5-0.0.1-SNAPSHOT.jar --spring.redis.password=this-should-be-sanitized",
+```
+
+## Spring Boot 2.0
+
+```
+      "properties": {
+        "spring.redis.password": {
+          "value": "******"
+--
+        "sun.java.command": {
+          "value": "target/demo-2.0-0.0.1-SNAPSHOT.jar --spring.redis.password=this-should-be-sanitized"
+        },
+```
